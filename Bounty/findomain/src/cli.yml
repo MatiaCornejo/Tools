@@ -1,0 +1,43 @@
+name: findomain
+version: "0.2.4"
+author: Eduard Tolosa <tolosaeduard@gmail.com>
+settings:
+    - ArgRequiredElseHelp
+    - StrictUtf8
+about: The fastest and cross-platform subdomain enumerator, don't waste your time.
+args:
+    - target:
+        short: t
+        long: target
+        help: Target host
+        takes_value: true
+        conflicts_with:
+          - file
+    - ip:
+        short: i
+        long: get-ip
+        help: Return the subdomain list with IP address if resolved.
+        takes_value: false
+    - file:
+        short: f
+        long: file
+        help: Sets the input file to use.
+        takes_value: true
+        conflicts_with:
+          - target
+    - output:
+        short: o
+        long: output
+        help: Write data to output file in the specified format.
+        takes_value: true
+        possible_values: [ txt, csv, json ]
+    - all-apis:
+        short: a
+        long: all-apis
+        help: Use all the available APIs to perform the search. It take more time but you will have a lot of more results.
+        takes_value: false
+    - proxy:
+        short: p
+        long: proxy
+        help: Use a proxy to make APIs requests.
+        takes_value: true
